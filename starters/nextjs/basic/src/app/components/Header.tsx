@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { Arrow } from "./Arrow";
-import { Firebase } from "./Firebase";
 
 export function Header() {
   const pathname = usePathname();
@@ -17,9 +16,8 @@ export function Header() {
         </Link>
       )}
 
-      <header className="header">
-        <Firebase />
-      </header>
+      {/*<header className="header">*/}
+      {/*</header>*/}
     </>
   );
 }

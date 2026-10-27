@@ -1,0 +1,46 @@
+.camera {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  container-type: inline-size;
+}
+
+.body {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Small message that appears on the camera's screen when a button is pressed */
+.toast {
+  position: absolute;
+  left: 37%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  padding: 1cqw 2cqw;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font: 2cqw monospace;
+}
+
+/* Invisible buttons sitting over the camera's real buttons */
+.hit {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.hit:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+.hit:active {
+  transform: translate(-50%, -50%) scale(0.94);
+}

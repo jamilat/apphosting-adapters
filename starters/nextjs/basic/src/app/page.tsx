@@ -1,11 +1,15 @@
 import Link from "next/link";
+import DigiCam from "./components/DigiCam";
 
 export default function Home() {
-  const message = process.env["MESSAGE"] || "Hello!";
+  const top_title = process.env["TITLE"] || "Title!";
+  const message = process.env["MESSAGE"] || "Hi!";
   return (
     <main className="content">
-      <h1 className="heading">Next.js on Firebase App Hosting</h1>
+      <h1 className="heading">{top_title}</h1>
       <p>{message}</p>
+
+      <DigiCam />
 
       <section className="features">
         <article className="card">
