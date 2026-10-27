@@ -3,11 +3,11 @@ import DigiCam from "./components/DigiCam";
 
 export default function Home() {
   const top_title = process.env["TITLE"] || "Title!";
-  const message = process.env["MESSAGE"] || "Hi!";
+  // const message = process.env["MESSAGE"] || "Hi!";
   return (
     <main className="content">
       <h1 className="heading">{top_title}</h1>
-      <p>{message}</p>
+      {/*<p>{message}</p>*/}
 
       <DigiCam />
 
